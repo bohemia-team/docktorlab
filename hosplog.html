@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Реєстраційна форма</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;0,700;1,200;1,400;1,600;1,700&family=Roboto:wght@400;700&family=Viga&display=swap" rel="stylesheet">
+ 
+    <style>
+      /* стилі для форми */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 300px;
+        margin: -11px auto;
+        
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"] {
+        width: 300px;
+        padding: 7px;
+        margin-bottom: 20px;
+        border: 1px solid #242038;
+border-radius: 5px;
+        font-size: 16px;
+      }
+
+      input[type="submit"] {
+        background: linear-gradient(95.35deg, #E79B1E -22.54%, #BEB85C 124.75%, #9CD08F 210.01%);
+box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 300px;
+        font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+letter-spacing: 0.035em;
+text-transform: uppercase;
+
+color: #F7F7F7;
+      }
+
+      /* стилі для картинки */
+      .image-container {
+        float: left;
+        width: 50%;
+        height: 100vh;
+        background-image: url(../Hossport/images/hospital.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+
+      /* стилі для заголовку форми */
+      h1 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 59px;
+        /* identical to box height */
+        width: 574px;
+        color: #242038;
+      }
+
+      /* стилі для підтвердження */
+      .confirmation {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 150vh;
+      }
+
+      .confirmation-text {
+        width: 50%;
+        padding-right: 50px;
+      }
+      h4 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height */
+        text-align: center;
+        color: #242038;
+      }
+      h4 span {
+        color: #E79B1E;
+      }
+      .reg_text{
+        padding-right: 270px;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reg_text">
+    <div class="image-container">
+      <img src="../Hossport/images/logo.svg" alt="" style="padding-left: 40px; padding-top: 20px;">
+    </div>
+    <form action="confirmation.html" method="POST">
+      <h1 style="margin-bottom: 5px;">Зареєструвати клініку</h1>
+      <h4 style="margin-top: 5px;">або <span>увійти</span>  у свій акаунт</h4>
+      <label for="clinic-name"></label>
+      <input type="text" id="clinic-name" placeholder="Назва клініки" name="clinic-name" required>
+
+      <label for="edrpou"></label>
+      <input type="text" id="edrpou" placeholder="ЄРДПОУ або ІНН" name="edrpou" required>
+      <label for="doctors-quantity"></label>
+      <input type="text" id="doctors-quantity" placeholder="Кількість лікарів в клініці" name="doctors-quantity" required>
+    
+      <h3>Контактна особа</h3>
+      <label for="full-name"></label>
+      <input type="text" id="full-name" placeholder="Ім'я" name="full-name" required>
+    
+      <label for="address"></label>
+      <input type="text" id="address" placeholder="Прізвище" name="address" required>
+    
+      <label for="email"></label>
+      <input type="email" id="email" placeholder="Адреса електронної пошти" name="email" required>
+    
+      <label for="phone"></label>
+      <input type="tel" id="phone" placeholder="Номер мобільного телефону" name="phone" required>
+    
+      <input type="submit" value="Зареєструвати">
+    </form>
+  </div>
+</body>
+</html>    

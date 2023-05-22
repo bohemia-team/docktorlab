@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  font-family: Montserrat;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden; /* Disable vertical scrollbar on the body */
+}
+ .topbar {
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 15px;
+
+color: #343434;
+   background-color: #333;
+   color: #fff;
+   padding: 10px;
+   text-align: center;
+ }
+ .check {
+  display: flex;
+ }
+ .search-bar {
+   display: flex;
+   padding: 5px;
+   justify-content: flex-end;
+   align-items: center;
+   /* position: absolute;
+   width: 1390px;
+   height: 113px;
+   left: 474px;
+   top: 19px; */
+ }
+ .search-bar input[type="text"] {
+   width: 100%; /* Додано ширину 100% */
+   box-sizing: border-box; /* Додано box-sizing */
+   margin-right: 10px; /* Додано margin-right для проміжку між полем введення та кнопкою */
+ }
+ aside {
+  width: 330px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  float: left;
+  height: calc(100vh - 20px); /* Adjust the height of the sidebar */
+  overflow-y: auto; /* Enable vertical scrollbar for the sidebar */
+}
+.content {
+  margin-left: 350px; /* Adjust the margin to create space for the sidebar */
+  padding: 20px;
+  color: #333;
+  height: calc(100vh - 40px); /* Adjust the height of the content */
+  overflow-y: auto; /* Enable vertical scrollbar for the content */
+}
+ .sidebar-header {
+   display: flex;
+   align-items: center;
+   position: relative;
+}
+
+.sidebar-header img {
+   /* margin: 0;
+    */
+   margin-top: 20px; 
+   margin-right: -50px;
+   width: 65px;
+   height: 45px;
+}
+
+.sidebar-header p {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 29px;
+   top: 20px;
+   margin-left: -50px;
+   /* margin: 0; */
+   flex-grow: 1;
+   text-align: center;
+   margin-bottom: 5px; /* Змінено bottom на margin-bottom */
+}
+
+.sidebar-header::after {
+   content: '';
+   position: absolute;
+   top: 85px;
+   bottom: -5px; /* Змінено bottom на -5px для зсуву лінії вниз */
+   padding-left: 2px;
+   padding-right: 2px;
+   width: calc(100% - 5px);
+   height: 1.15px;
+   background-color: #ccc;
+   margin-bottom: 0;
+}
+
+
+ .sidebar-section {
+   margin-top: 50px;
+ }
+ 
+
+ .sidebar-section h2 {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 20px;
+   font-weight: 400;
+   color: #242038;
+ }
+ .sidebar-section select{
+   width: 180px;
+   height: 41px;
+   border-radius: 10px;
+ }
+ #district-select option[value="all"] {
+   font-family: Montserrat;
+   font-style: normal;
+   font-weight: bolder;
+   font-size: 16px;
+   line-height: 20px;
+   /* Додайте інші стилі шрифту за вашим вибором */
+ }
+ 
+ .sidebar-section option{
+   font-style: normal;
+   font-weight: 200;
+   font-size: 16px;
+   line-height: 20px;
+ }
+ .sidebar-section button {
+   background-color: #333;
+   color: #fff;
+   padding: 8px 16px;
+   border: none;
+   border-radius: 4px;
+   margin-top: 10px;
+   cursor: pointer;
+ }
+ 
+ .content {
+   margin: 0 auto; /* Додано властивість margin із значенням 'auto' */
+   width: 600px; /* Встановлено фіксовану ширину для основного вмісту */
+   padding: 20px;
+   color: #333;
+ }
+     
+ .district-list {
+   margin-top: 10px;
+   display: none;
+ }
+ 
+ .district-list ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+ }
+ 
+ .district-list li {
+   margin-bottom: 5px;
+ }
+ .doctor-container {
+display: flex;
+align-items: center;
+}
+
+.doctor-container img:not(.clinic-icon img):not(.address-box img) {
+order: -1; /* Змінити порядок зображення на 1 */
+border-radius: 50%;
+width: 150px;
+height: 170px;
+}
+
+.doctor-info {
+margin-left: 35px; /* Відступ зліва від зображення */
+}
+.doctor-info h3 {
+font-size: 24px; /* Розмір шрифту для імені лікаря */
+margin-top: 5px;
+margin-bottom: 0;
+}
+
+.doctor-info .specialization {
+font-size: 18px;
+margin-bottom: 13px; /* Розмір шрифту для спеціалізації лікаря */
+}
+
+.doctor-info p {
+margin-top: 25px; /* Відступ зверху для параграфів з умовами прийому */
+font-size: 16px; /* Розмір шрифту для параграфів з умовами прийому */
+}
+.clinic-button {
+background-color: #007bff;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+
+}
+
+.clinic-button:hover {
+background-color: #0056b3;
+}
+
+.address-box {
+border: 1px solid #ccc;
+border-radius: 5px;
+padding: 5px;
+margin-top: 10px;
+display: flex;
+align-items: center;
+}
+
+.clinic {
+     display: inline-block;
+     padding: 2px;
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-bottom: 22px;
+ }
+ .clinic-icon {
+     display: flex;
+     align-items: center;
+ }
+
+ .clinic-icon img {
+   margin-top: 0;
+     width: 29px;
+     height: 29px;
+     object-fit: contain;
+     /* object-position: center; */
+     margin-right: 5px;
+     border-radius: 0;
+ }
+
+ .clinic-icon h5 {
+     margin: 0;
+ }
+
+.address-box img{
+   margin-top: 0;
+     width: 13px;
+     height: 15px;
+     object-fit: contain;
+     /* object-position: center; */
+     margin-right: 5px;
+     border-radius: 0;  
+}
+.rounded-box {
+border-radius: 10px;
+border: 1px solid black;
+padding: 10px;
+margin-bottom: 15px;
+width: 1390px;
+height: 300px;
+margin-right: 35px;
+}
+.see-all-button{
+margin: 25px auto;
+align-items: center;
+display: flex;
+justify-content: center;
+}
+.see-all-button button{
+border: 1px solid #ccc;
+border-radius: 10px;
+padding: 5px;
+margin-top: 15px;
+display: flex;
+align-items: center;
+height: 23px;
+width: 205px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #fff;
+}
+
+.see-all-button p{
+align-items: center;
+}

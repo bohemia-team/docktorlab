@@ -1,0 +1,45 @@
+*{
+  box-sizing: border-box;
+ }
+ 
+ body{
+  font-family: 'Montserrat', sans-serif;
+ }
+ a{
+  text-decoration: none;
+  color: inherit;
+ }
+ 
+ 
+ .header {
+  display: flex;
+}
+
+.logo {
+  width: 61px;
+  height: 40px;
+  margin-left: 40px;
+  margin-top: 45px;
+}
+
+.title {
+  margin-top: 56px;
+  margin-left: 53px;
+}
+
+.admin {
+  display: flex;
+  flex-direction: column; /* Added to arrange "admin_name" below "name" */
+  align-items: flex-end; /* Added to align the content to the right */
+  margin-top: 33px;
+  margin-left: auto; /* Changed to "auto" to push the "admin" section to the right */
+  margin-right: 40px; /* Added margin-right for spacing from the right edge */
+}
+
+.name {
+  margin-right: 8px; /* Added margin-right for spacing between "name" and "admin_name" */
+}
+
+.admin_name {
+  font-size: 12px; /* Added font-size to differentiate the "admin_name" style */
+}

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" href="css/styles.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;0,700;1,200;1,400;1,600;1,700&family=Roboto:wght@400;700&family=Viga&display=swap" rel="stylesheet">
+ 
+  <title>Hospital page</title>
+  <!-- <style>
+    /* Стилі для сторінки */
+
+  </style> -->
+</head>
+<body>
+  <aside>
+   <div class="sidebar-header">
+      <img src="images/logo.svg" alt="Logo" height="75" width="100">
+      <p>Hospport</p>
+   </div>
+   <div class="sidebar-section">
+      <h2>Район</h2>
+      <select id="district-select">
+        <option value="all" selected style="font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+        
+        
+        color: #000000; padding-left: 5px;">Всі райони</option>
+        <option value="district1">Шевченківський район</option>
+        <option value="district2">Личаківський район</option>
+        <option value="district3">Сихівський район</option>
+        <option value="district4">Франківський район</option>
+        <option value="district5">Залізничний район</option>
+        <option value="district6">Галицький район</option>
+      </select>
+      
+      <div class="district-list">
+        <ul id="district-options">
+          <li>Район 1</li>
+          <li>Район 2</li>
+          <li>Район 3</li>
+          <li>Район 4</li>
+        </ul>
+      </div>
+    </div>
+    <div class="sidebar-section">
+      <h2>Типи лікарнень</h2>
+      <div class="check">
+        <img src="images/check_white.svg" alt="">
+        <h6 style="padding-left: 13px; font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 20px;
+        
+        color: #000000;">державні</h6>
+      </div>
+      <br>
+      <div class="check">
+        <img src="images/check.svg" alt="">
+        <h6 style="padding-left: 13px; font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 20px;
+        
+        color: #000000;">приватні</h6>
+      </div>
+    </div>
+    <div class="sidebar-section">
+      <h2>Зручності в лікарні</h2>
+      <div class="check">
+        <img src="images/check_white.svg" alt="">
+        <h6 style="padding-left: 13px; font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 20px;
+        
+        color: #000000;">Паркінг</h6>
+      </div>
+      <br>
+      <div class="check">
+        <img src="images/check_white.svg" alt="">
+        <h6 style="padding-left: 13px; font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 20px;
+        
+        color: #000000;">Дитяча кімната</h6>
+      </div>
+      <br>
+      <div class="check">
+        <img src="images/check_white.svg" alt="">
+        <h6 style="padding-left: 13px; font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 20px;
+        
+        color: #000000;">Wi-Fi зона</h6>
+      </div>
+      <br>
+      <div class="check">
+        <img src="images/check.svg" alt="">
+        <h6 style="padding-left: 13px; font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 20px;
+        
+        color: #000000;">Оплата картою</h6>
+      </div>
+      <br>
+      <div class="check">
+        <img src="images/check_white.svg" alt="">
+        <h6 style="padding-left: 13px; font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 20px;
+        
+        color: #000000;">Аптека</h6>
+      </div>
+    </div>
+ 
+  </aside>
+  
+  <div class="topbar">
+    <!-- Контент сороч-бару -->
+    <div class="search-bar">
+      <!-- Search bar (пошукове поле) -->
+      <input type="text" placeholder="Пошук...">
+      <button type="submit">Пошук</button>
+    </div>
+  </div>
+  
+  <div class="content">
+   <div class="portfolio">
+      <div class="doctor-container rounded-box">
+         <div class="doctor-info">
+            <p class="specialization">лікар-невропатолог</p>
+            <h3>Дорош Надія Миколаївна</h3>
+            <p>Умови прийому: <br>
+               уточнюйте в реєстратурі</p>
+               <div class="clinic">
+                  <span>Державна клініка</span>
+               </div>
+            <div class="clinic-icon">
+               <img src="images/hosp.svg" alt="icon">                  
+               <h5>КНП "6-А МП М. ЛЬВОВА"</h5>
+            </div>            
+            <div class="address-box">
+               <img src="images/loc.svg" alt="icon">
+               <span class="address">м. Львів, вул. Медова Печера, 1, кабінет 156</span>
+            </div>
+         </div>
+         <img src="images/doctor.png" alt="Doctor 1">
+       </div>
+       
+      
+       <div class="doctor-container rounded-box">
+         <div class="doctor-info">
+            <p class="specialization">акушер-гінеколог</p>
+            <h3>Боднар Марія Марківна</h3>
+            <p>Умови прийому: <br>
+               уточнюйте в реєстратурі</p>
+               <div class="clinic">
+                  <span>Приватна клініка</span>
+               </div>   
+            <div class="clinic-icon">
+               <img src="images/hosp.svg" alt="icon">                  
+               <h5>КНП "6-А МП М. ЛЬВОВА"</h5>
+            </div>
+               <div class="address-box">
+                  <img src="images/loc.svg" alt="icon">
+                  <span class="address">вулиця Мечникова, 8, Львів, Львівська область</span>
+            </div>         
+         </div>
+         <img src="images/doctor.png" alt="Doctor 1">
+       </div>
+      
+       <div class="doctor-container rounded-box">
+         <div class="doctor-info">
+            <p class="specialization">Офтальмолог</p>
+            <h3>Мельничук Степан Ігорович</h3>
+            <p>Умови прийому: <br>
+               уточнюйте в реєстратурі</p>
+               <div class="clinic">
+                  <span>Приватна клініка</span>
+               </div>               
+               <div class="clinic-icon">
+                  <img src="images/hosp.svg" alt="icon">                  
+                  <h5>КНП "6-А МП М. ЛЬВОВА"</h5>
+               </div>            
+            <div class="address-box">
+               <img src="images/loc.svg" alt="icon">
+               <span class="address">м. Львів, вул. Симоненка, 4, кабінет 420</span>
+            </div>
+         </div>
+         <img src="images/doctor.png" alt="Doctor 1">
+       </div>
+       <div class="see-all-button">
+         <button>Переглянути все</button>
+       </div>
+    </div>
+    
+  </div>
+</body>
+</html>

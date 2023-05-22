@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;0,700;1,200;1,400;1,600;1,700&family=Roboto:wght@400;700&family=Viga&display=swap" rel="stylesheet">
+ 
+    <title>Реєстраційна форма</title>
+    <style>
+      /* стилі для форми */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 300px;
+        margin: -8px auto;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"] {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      /* стилі для картинки */
+      .image-container {
+        float: left;
+        width: 45%;
+        height: 100vh;
+        background-image: url(../Hossport/images/hospital.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+
+      /* стилі для заголовку форми */
+      h1 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 59px;
+        /* identical to box height */
+        width: 574px;
+        color: #242038;
+      }
+
+      /* стилі для підтвердження */
+      .confirmation {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .confirmation-text {
+        width: 50%;
+        padding-right: 50px;
+      }
+
+      /* стилі для кнопок Google та Facebook */
+      .social-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+
+      .google-button,
+      .facebook-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        color: #000;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .google-button img,
+      .facebook-button img {
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image-container">
+      <img src="../Hossport/images/logo.svg" alt="" style="padding-left: 40px; padding-top: 20px;">
+    </div>
+    <form action="confirmation.html" method="POST">
+      <h1>Зареєструватися</h1>
+
+      <label for="full-name"></label>
+      <input type="text" id="full-name" placeholder="Ім'я" name="full-name" required>
+
+      <label for="address"></label>
+      <input type="text" id="address" placeholder="Прізвище" name="address" required>
+
+      <label for="email"></label>
+      <input type="email" id="email" placeholder="Адреса електронної пошти" name="email" required>
+
+      <label for="phone"></label>
+      <input type="tel" id="phone" placeholder="Номер мобільного телефону"  name="phone" required>
+
+      <label for="password"></label>
+      <input type="tel" id="password" placeholder="Пароль"  name="phone" required>
+      <input type="tel" id="password" placeholder="Підтвердити пароль"  name="phone" required>
+
+      <input type="submit" value="Зареєструватися">
+
+      <div class="social-buttons">
+        <button class="google-button">
+          <img src="google_logo.png" alt="Google Logo">
+          Продовжити з Google
+        </button>
+        <button class="facebook-button">
+          <img src="facebook_logo.png" alt="Facebook Logo">
+          Продовжити з Facebook
+        </button>
+      </div>
+    </form>
+  </body>
+</html>
+
