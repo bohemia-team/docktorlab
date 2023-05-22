@@ -1,0 +1,245 @@
+*{
+ box-sizing: border-box;
+}
+
+body{
+ font-family: 'Montserrat', sans-serif;
+}
+a{
+ text-decoration: none;
+ color: inherit;
+}
+ /* Стилі для заголовка і пошукової форми */
+ h1 {
+  text-align: center;
+}
+h3 {
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 15px;
+
+color: #343434;
+
+}
+.connect {
+  display: flex;
+  justify-content: space-between;
+}
+.window {
+
+  position: relative;
+  width: 300px;
+  height: 100vh;
+  background: #F7F7F7
+}
+
+.window_header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.win_logo {
+  width: 61px;
+  height: 40px;
+  margin-right: 75px;
+}
+
+.win_title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  margin-top: 31px;
+  line-height: 29px;
+  
+  color: #242539;
+}
+
+.window::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #C4C4C4;
+}
+
+.win_blocks {
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 221px; 
+}
+
+.first_block,
+.second_block,
+.third_block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+width: 100px;
+color: #242038;
+}
+.first_block-photo {
+  margin-top: 11px;
+  padding-top: 0px;
+  vertical-align: middle; /* Додаємо вертикальне вирівнювання по середині */
+}
+
+.second_block-photo {
+  padding-top: 8px;
+}
+.third_block-photo {
+  width: 50px;
+  height: 50px;
+ 
+  padding-top: 10px;
+  vertical-align: middle; /* Додаємо вертикальне вирівнювання по середині */
+}
+
+.first_block-text,
+.second_block-text,
+.third_block-text {
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+
+color: #242038;
+  padding-left: 16px;
+  margin-top: 5px;
+  white-space: nowrap;
+  
+  font-weight: bold;
+  display: inline-block; /* Додаємо властивість inline-block для блоку тексту */
+  vertical-align: middle; /* Додаємо вертикальне вирівнювання по середині */
+}
+
+.win_account-title {
+  margin-top: 131px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 18px;
+
+color: #242038;
+}
+
+.win_button {
+  margin-top: 90px;
+  display: inline-block;
+  background: linear-gradient(101.11deg, #9CD08F -14.14%, #FFB100 170.53%);
+  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  padding-top: 24px;
+  line-height: 29px;
+  text-align: center; /* Додаємо вирівнювання тексту по центру */
+  width: 250px;
+  height: 77px;
+  color: #F7F7F7;
+  margin-bottom: 20px;
+}
+
+.search-form {
+
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 15px;
+
+color: #343434;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 15px;
+
+color: #343434;
+}
+
+
+
+
+
+
+
+
+/* Стилі для блоків медичних закладів */
+.hospital-block {
+  width: 287px;
+  height: 356px;
+  border: 1px solid #E7E7E7;
+border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  
+}
+
+.hospital-block img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.hospital-block hr {
+  border: 1px solid #E7E7E7;
+  margin: 10px 0;
+}
+
+.hospital-block .info-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+/* Стилі для ряду блоків медичних закладів */
+.hospital-row {
+  text-align: center;
+}
+.info-button {
+  background: linear-gradient(180deg, #E79B1E 0%, #BEB85C 78.12%, #BEB85C 100%);
+border: 1px solid #E7E7E7;
+border-radius: 20px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 15px;
+/* identical to box height */
+
+text-align: center;
+
+color: #FFFFFF;
+width: 219px;
+height: 40px;
+}
